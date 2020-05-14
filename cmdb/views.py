@@ -2,6 +2,13 @@ from django.shortcuts import render
 from django.shortcuts import HttpResponse  # 导入该模块
 from cmdb import models
 
+# 创建用户信息列表，造两条数据
+user_list = [
+    {"user": "Jack", "pwd": "123"},
+    {"user": "Mark", "pwd": "456"},
+
+]
+
 
 # Create your views here.
 

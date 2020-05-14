@@ -23,7 +23,7 @@ from . import view
 urlpatterns = [
     path('hello/', view.hello),
     url(r'^admin/', admin.site.urls),  # 后台管理页面
-    url(r"^main/", views.main),  # app路由 url(regex, view, kwargs=None, name=None)
     url(r"^$", views.welcome),
+    url(r"^main/", views.main),  # app路由 url(regex, view, kwargs=None, name=None)
     url(r"^login/", views.login),
 ]
